@@ -1,0 +1,21 @@
+{
+  "name": "@orkid-labs/hedera-utils",
+  "version": "0.1.0",
+  "description": "Hedera Hashgraph utilities — HCS logging, milestone tracking, dashboard components",
+  "main": "lib/hcs-log-store.ts",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "hedera",
+    "hcs",
+    "hashgraph",
+    "blockchain"
+  ],
+  "author": "Orkid Labs",
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/orkid-labs/hedera-utils.git"
+  }
+}
