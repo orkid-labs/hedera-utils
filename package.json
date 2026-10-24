@@ -2,20 +2,47 @@
   "name": "@orkid-labs/hedera-utils",
   "version": "0.1.0",
   "description": "Hedera Hashgraph utilities — HCS logging, milestone tracking, dashboard components",
-  "main": "lib/hcs-log-store.ts",
+  "main": "dist/hcs-log-store.js",
+  "module": "dist/hcs-log-store.mjs",
+  "types": "dist/hcs-log-store.d.ts",
+  "exports": {
+    ".": {
+      "types": "./dist/hcs-log-store.d.ts",
+      "import": "./dist/hcs-log-store.mjs",
+      "require": "./dist/hcs-log-store.js"
+    }
+  },
+  "files": [
+    "dist",
+    "components"
+  ],
+  "sideEffects": false,
   "scripts": {
+    "build": "tsup",
+    "prepublishOnly": "npm run build",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "keywords": [
     "hedera",
     "hcs",
     "hashgraph",
-    "blockchain"
+    "blockchain",
+    "hts",
+    "utilities",
+    "typescript",
+    "orkid-labs"
   ],
   "author": "Orkid Labs",
   "license": "MIT",
   "repository": {
     "type": "git",
     "url": "https://github.com/orkid-labs/hedera-utils.git"
+  },
+  "publishConfig": {
+    "access": "public"
+  },
+  "devDependencies": {
+    "tsup": "^9.0.0",
+    "typescript": "^5.9.3"
   }
 }
